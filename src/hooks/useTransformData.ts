@@ -1,4 +1,4 @@
-import { EMPLOYEE_POST_DATA } from "@/types/EmployeeInfoProps";
+import { EMPLOYEE_POST_DATA } from "@/types/types";
 
 export const transformEmployeeDetails = (data: EMPLOYEE_POST_DATA) => {
   return {
