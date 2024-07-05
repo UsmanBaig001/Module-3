@@ -34,6 +34,7 @@ const SettingOptions = () => {
       {SETTING_OPTIONS_DATA.map((item, i: number) => {
         return (
           <div
+            key={i}
             className={` ${
               i === SETTING_OPTIONS_DATA.length - 1 ? "" : "border-b-[1px]"
             }  py-5 flex justify-between items-center border-borderGrey `}
