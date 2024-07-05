@@ -32,7 +32,7 @@ const useChangePassword = () => {
       return;
     }
     if (newPassword !== confirmPassword) {
-      toast.error("Password's don't match!");
+      toast.error("Passwords dont match!");
       return;
     }
     try {

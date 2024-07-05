@@ -4,7 +4,7 @@ import ViewEmployee from "@/components/viewEmployee/ViewEmployee";
 import { useParams } from "next/navigation";
 import React, { useState } from "react";
 
-const page = () => {
+const Page = () => {
   const [name, setName] = useState("Employee Name");
   const { id }: { id: string } = useParams();
   return (
@@ -14,4 +14,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

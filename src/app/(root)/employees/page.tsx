@@ -9,7 +9,7 @@ import { iconAdd, iconFilter } from "@/constants/Images";
 import Link from "next/link";
 import useEmployees from "./useEmployees";
 
-const page = () => {
+const Page = () => {
   const { allEmployees, searchText, setSearchText } = useEmployees();
   return (
     <DefaultLayout
@@ -44,4 +44,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

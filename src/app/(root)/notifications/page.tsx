@@ -3,7 +3,7 @@ import { profilePhoto } from "@/constants/Images";
 import Image from "next/image";
 import React from "react";
 
-const page = () => {
+const Page = () => {
   return (
     <DefaultLayout heading={"Notifications"} description={"All Notifications"}>
       <div className="border-borderGrey border-[1px]  mx-[30px] px-5 rounded-[10px]">
@@ -32,4 +32,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

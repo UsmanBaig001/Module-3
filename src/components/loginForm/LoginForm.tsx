@@ -34,7 +34,7 @@ export default function LoginForm() {
           <span className="ms-2.5"> Remember me</span>
         </div>
         <Link href={"/register"} className="font-light text-customOrange me-4">
-          Don't have an acount?
+          Don&apos;t have an acount?
         </Link>
       </div>
       <div

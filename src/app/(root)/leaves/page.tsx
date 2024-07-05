@@ -2,7 +2,7 @@ import React from "react";
 import DefaultLayout from "@/components/layouts/DefaultLayout";
 import AttendanceTable from "@/components/attendanceTable/AttendanceTable";
 
-const page = () => {
+const Page = () => {
   return (
     <DefaultLayout heading={"Leaves"} description={"All Leaves"}>
       <AttendanceTable
@@ -14,4 +14,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

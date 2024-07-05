@@ -9,7 +9,7 @@ import ProfessionalInformation from "@/components/professionalInformation/Profes
 import SubmitButton from "@/components/submitButton/SubmitButton";
 import DefaultLayout from "@/components/layouts/DefaultLayout";
 
-const page = () => {
+const Page = () => {
   const {
     option,
     isloading,
@@ -73,4 +73,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

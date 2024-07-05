@@ -3,7 +3,7 @@
 import FormInput from "@/components/formInput/FormInput";
 import useChangePassword from "./useChangePassword";
 
-export default function page() {
+export default function Page() {
   const { handleSubmit, handleChange } = useChangePassword();
 
   return (

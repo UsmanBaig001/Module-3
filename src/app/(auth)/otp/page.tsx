@@ -6,7 +6,7 @@ import useOtp from "./useOtp";
 import { iconArrow } from "@/constants/Images";
 import FormInput from "@/components/formInput/FormInput";
 
-export default function page() {
+export default function Page() {
   const { handleSubmit, handleChange } = useOtp();
   return (
     <section className="bg-primaryBlack h-screen flex justify-center items-center w-full text-white ">

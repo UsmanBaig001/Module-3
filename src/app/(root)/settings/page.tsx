@@ -2,7 +2,7 @@ import DefaultLayout from "@/components/layouts/DefaultLayout";
 import SettingOptions from "@/components/settingOptions/SettingOptions";
 import React from "react";
 
-const page = () => {
+const Page = () => {
   return (
     <DefaultLayout heading={"Settings"} description={"All System Settings"}>
       <SettingOptions />
@@ -10,4 +10,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
