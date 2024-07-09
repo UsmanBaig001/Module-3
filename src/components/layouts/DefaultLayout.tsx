@@ -21,7 +21,7 @@ export default function DefaultLayout({
         isSideBarOpen={isSideBarOpen}
         setIsSideBarOpen={setIsSideBarOpen}
       />
-      <div className="flex flex-col  w-full">
+      <div className="flex flex-col w-full">
         <Header
           isSideBarOpen={isSideBarOpen}
           setIsSideBarOpen={setIsSideBarOpen}
