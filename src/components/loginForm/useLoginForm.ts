@@ -35,9 +35,8 @@ const useLoginForm = () => {
       window.location.assign("/");
     } else if (login?.error) {
       console.error(login?.error);
-      toast.error("Incorrect login");
+      toast.error("Invalid Credentails for login!");
     }
-
     setLoading(false);
   };
 

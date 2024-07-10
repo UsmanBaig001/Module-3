@@ -47,7 +47,7 @@ const AttendanceChart: React.FC = () => {
         </div>
       </div>
 
-      <div className="mx-[33px]">
+      <div className="lg:mx-[33px]">
         <ReactApexChart
           options={options}
           series={state.series}

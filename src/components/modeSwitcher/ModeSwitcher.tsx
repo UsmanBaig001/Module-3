@@ -4,7 +4,7 @@ import useColorMode from "@/hooks/useColorMode";
 import Image from "next/image";
 import { useState } from "react";
 const ModeSwitcher = () => {
-  const [isActive, setIsActive] = useState(false);
+  const [isActive, setIsActive] = useState(true);
   const [colorMode, setColorMode] = useColorMode();
 
   return (

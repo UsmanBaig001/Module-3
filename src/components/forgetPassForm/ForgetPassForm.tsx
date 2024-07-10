@@ -20,7 +20,10 @@ export default function ForgetPassForm() {
         onClick={sendOTP}
         className="px-10 py-3 bg-customOrange w-full rounded-[10px] mt-5 text-center text-white disabled:opacity-70 cursor-pointer"
       >
-        Send OTP
+        {loading && (
+          <div className="animate-spin inline-block rounded-full h-5 w-5 border-white border-t-2 "></div>
+        )}
+        {!loading && <div className=""> Send OTP</div>}
       </button>
     </div>
   );

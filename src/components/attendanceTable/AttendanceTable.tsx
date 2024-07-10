@@ -99,7 +99,7 @@ const AttendanceTable = ({
               const status = getCheckInTime(data?.checkIn);
               return (
                 <tr className="border-t-[1px] border-borderGrey" key={i}>
-                  <th scope="row" className=" flex items-center pt-[10px] ">
+                  <th scope="row" className="mx-2 flex items-center pt-[10px] ">
                     {data.photoURL ? (
                       <img
                         src={data.photoURL}
@@ -120,10 +120,10 @@ const AttendanceTable = ({
                       {data?.firstName}
                     </div>
                   </th>
-                  <td className="pt-[10px]">
+                  <td className="pt-[10px] mx-2">
                     {data?.designation.slice(0, 12)}
                   </td>
-                  <td className="pt-[10px]">
+                  <td className="pt-[10px] mx-2">
                     <input
                       className="bg-primaryBlack w-24 outline-none"
                       type="text"
@@ -133,7 +133,7 @@ const AttendanceTable = ({
                       value={data?.type}
                     />
                   </td>
-                  <td className="pt-[10px]">
+                  <td className="pt-[10px] mx-2">
                     <input
                       name="checkIn"
                       disabled={!inputEnabled}
@@ -143,7 +143,7 @@ const AttendanceTable = ({
                       value={data?.checkIn}
                     />
                   </td>
-                  <td className="pt-[10px]">
+                  <td className="pt-[10px] mx-2">
                     <div
                       className={` ${
                         status
@@ -155,7 +155,7 @@ const AttendanceTable = ({
                     </div>
                   </td>
                   {showAttendance ? (
-                    <td>
+                    <td className="mx-2">
                       <SelectMenu
                         initialValue={data?.attendance}
                         margin={false}

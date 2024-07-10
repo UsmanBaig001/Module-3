@@ -15,7 +15,7 @@ const StatsCard = ({
   srcAlt,
 }: STATS_CARD_TYPES) => {
   return (
-    <div className="ms-[10px] mt-[20px] w-[510px] h-[154px] rounded-[10px] border-borderGrey border-[1px]">
+    <div className="ms-[10px] mt-[20px] w-full me-[30px] sm:w-[510px] h-[154px] rounded-[10px] border-borderGrey border-[1px]">
       <div className="flex mt-4 ps-[26px] items-center mb-[10px]">
         <div className="bg-orangeShade w-[65px] h-[40px] flex rounded-[5px] items-center justify-center ">
           <Image src={icon} alt={iconAlt} />

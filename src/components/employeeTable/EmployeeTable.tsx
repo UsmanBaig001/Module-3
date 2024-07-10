@@ -15,18 +15,18 @@ import Loader from "../loader/Loader";
 const EmployeeTable = ({ data }: { data: EMPLOYEES_TABLE_DATA[] }) => {
   const { handleDelete } = useEmployeeTable();
   return (
-    <div className="mt-[30px] shadow-md ">
+    <div className="mt-[30px] shadow-md overflow-x-auto">
       <table className="w-full font-light text-sm text-left rtl:text-right ">
         <thead className="text-[16px] text-customGrey font-light">
           <tr>
-            {EMPLOYEE_TABLE_HEAD.map((item, i) => {
+            {EMPLOYEE_TABLE_HEAD?.map((item, i) => {
               return (
                 <th
                   scope="col"
                   className="py-[10px] border-b-[1px] border-borderGrey"
                   key={i}
                 >
-                  {item.heading}
+                  {item?.heading}
                 </th>
               );
             })}
@@ -45,13 +45,13 @@ const EmployeeTable = ({ data }: { data: EMPLOYEES_TABLE_DATA[] }) => {
             ))}
           {data &&
             data.length > 0 &&
-            data.map((data: EMPLOYEES_TABLE_DATA, i: number) => (
+            data?.map((data: EMPLOYEES_TABLE_DATA, i: number) => (
               <tr className="border-b-[1px] border-borderGrey" key={i}>
-                <th scope="row" className="flex items-center pt-[10px]">
-                  {data.photoURL ? (
+                <th scope="row" className="flex items-center mx-2 pt-[10px]">
+                  {data?.photoURL ? (
                     <img
-                      src={data.photoURL}
-                      className="rounded-[18px] h-[36px] w-[36px] hidden sm:flex"
+                      src={data?.photoURL}
+                      className="rounded-[18px] h-[36px] w-[36px] hidden md:flex"
                       alt="Photo"
                     />
                   ) : (
@@ -59,7 +59,7 @@ const EmployeeTable = ({ data }: { data: EMPLOYEES_TABLE_DATA[] }) => {
                       src={profilePhoto}
                       height={36}
                       width={36}
-                      className="rounded-[18px] hidden sm:flex"
+                      className="rounded-[18px] hidden md:flex"
                       alt="Photo"
                     />
                   )}
@@ -67,20 +67,20 @@ const EmployeeTable = ({ data }: { data: EMPLOYEES_TABLE_DATA[] }) => {
                     {data?.firstName + " " + data?.lastName}
                   </div>
                 </th>
-                <td className="pt-[10px]">{data?.employeeId}</td>
-                <td className="pt-[10px]">{data.department}</td>
-                <td className="pt-[10px]">{data.designation}</td>
-                <td className="pt-[10px]">{data?.employmentType}</td>
-                <td className="pt-[10px]">
+                <td className="pt-[10px] mx-2">{data?.employeeId}</td>
+                <td className="pt-[10px] mx-2">{data?.department}</td>
+                <td className="pt-[10px] mx-2">{data?.designation}</td>
+                <td className="pt-[10px] mx-2">{data?.employmentType}</td>
+                <td className="pt-[10px] mx-2">
                   <div className="w-fit text-[12px] bg-darkOrange text-customOrange rounded-[4px] px-[9px] py-[3px] font-light">
                     Permanent
                   </div>
                 </td>
-                <td className="pt-[10px] flex space-x-2">
-                  <Link href={`/employees/${data.id}`}>
+                <td className="pt-[10px] mx-2 flex space-x-2">
+                  <Link href={`/employees/${data?.id}`}>
                     <Image src={iconView} alt="iconView" />
                   </Link>
-                  <Link href={`/employees/${data.id}`}>
+                  <Link href={`/employees/${data?.id}`}>
                     <Image src={iconEdit} alt="iconEdit" />
                   </Link>
                   <button onClick={() => handleDelete(data?.id)}>

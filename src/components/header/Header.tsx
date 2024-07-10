@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { iconArrow, iconBell, iconMenu } from "@/constants/Images";
+import { iconBell, iconMenu } from "@/constants/Images";
 import DropDown from "../dropDown/DropDown";
 import SearchBar from "../searchBar/SearchBar";
 import Link from "next/link";
@@ -25,7 +25,7 @@ const Header = ({
         ) : (
           <></>
         )}
-        <div className="flex flex-col">
+        <div className="hidden sm:flex flex-col">
           <div className="text-[20px]">{heading}</div>
           <div className="text-[14px] text-customGrey">{description}</div>
         </div>

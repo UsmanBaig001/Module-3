@@ -12,7 +12,7 @@ import { COLORS } from "@/constants/Colors";
 
 const StatsCardGroup = ({ employeesArray }: { employeesArray: number }) => {
   return (
-    <div className="flex flex-wrap">
+    <div className="flex flex-wrap justify-center  md:justify-start">
       <StatsCard
         icon={orangeUsers}
         amount={employeesArray}

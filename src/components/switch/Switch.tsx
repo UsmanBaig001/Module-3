@@ -2,7 +2,7 @@
 import { useState } from "react";
 
 const Switch = () => {
-  const [enabled, setEnabled] = useState<boolean>(false);
+  const [enabled, setEnabled] = useState<boolean>(true);
   return (
     <div>
       <label

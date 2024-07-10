@@ -21,7 +21,7 @@ const useEmployees = () => {
     if (!Array.isArray(allEmployees)) {
       return [];
     }
-    return allEmployees.filter(
+    return allEmployees?.filter(
       (employee) =>
         employee?.firstName.toLowerCase().includes(searchText.toLowerCase()) ||
         employee?.department.toLowerCase().includes(searchText.toLowerCase()) ||
