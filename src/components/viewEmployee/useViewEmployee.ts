@@ -18,7 +18,7 @@ const useViewEmployee = ({ id, setName }: EMPLOYEE_DETAILS_PROPS) => {
   const [menuOption, setMenuOption] = useState<number>(0);
   const dispatch = useAppDispatch();
   const employeeDetails = useAppSelector(
-    (state) => state.employeeDetails.employeeDetails
+    (state) => state.employeeDetails?.employeeDetails
   );
   const handleUpdate = async (event: MouseEvent<HTMLButtonElement>) => {
     event.preventDefault();

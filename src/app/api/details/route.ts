@@ -5,7 +5,10 @@ const prisma = new PrismaClient();
 
 export const GET = async (request: NextRequest) => {
   try {
-    const id = request.nextUrl.searchParams.get("id");
+    const { searchParams } = new URL(request.url);
+    const id = searchParams.get("id");
+    console.log("param", id);
+    // const id = request?.nextUrl?.searchParams.get("id");
     if (!id) {
       return new NextResponse("Missing employee ID", {
         status: 400,
